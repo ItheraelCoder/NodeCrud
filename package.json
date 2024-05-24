@@ -1,0 +1,19 @@
+{
+  "name": "node_crud",
+  "version": "1.0.0",
+  "description": "Crud with node js and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItheraelCoder/NodeCrud.git"
+  },
+  "author": "Jorge Edwin Peña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItheraelCoder/NodeCrud/issues"
+  },
+  "homepage": "https://github.com/ItheraelCoder/NodeCrud#readme"
+}
