@@ -1,6 +1,6 @@
 const net=require('node:net');
 
-function findAbiablePort(desiredPort){
+function findAvailablePort(desiredPort){
     return new promise((resolve,reject)=>{
         const server = net.createServer()
 
@@ -13,7 +13,7 @@ function findAbiablePort(desiredPort){
 
         server.on('error',(err)=>{
             if(err.code === 'EADDRINUSE'){
-                findAbiablePort(0).then(port => resolve(port))
+                findAvailablePort(0).then(port => resolve(port))
             }else{
                 reject(err);
             }
@@ -21,4 +21,4 @@ function findAbiablePort(desiredPort){
     })
 }
 
-module.exports = {findAbiablePort}
+module.exports = {findAvailablePort}
